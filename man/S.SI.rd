@@ -19,11 +19,11 @@ if the value of this vector for unit \eqn{k} is zero, the unit \eqn{k} was not s
 selected in the sample.}   
 \author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{      
-Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
 Fan, C.T., Muller, M.E., Rezucha, I. (1962), Development of sampling plans by using sequential
 (item by item) selection techniques and digital computer, \emph{Journal of the American Statistical Association}, 57, 387-402.\cr
-Guti\'errez, H. A. (2009), \emph{Estrategias de muestreo: Dise\~no de encuestas y estimaci\'on de par\'ametros}. 
-Editorial Universidad Santo Tom\'as. 
+Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
+Editorial Universidad Santo Tomás.
 }
 \examples{
 ############

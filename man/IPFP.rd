@@ -16,8 +16,8 @@ IPFP(Table, Col.knw, Row.knw, tol=0.0001)
 \references{
 Deming, W. & Stephan, F. (1940), On a least squares adjustment of a sampled frequency 
 table when the expected marginal totals are known. \emph{Annals of Mathematical Statistics}, 11, 427-444.\cr
-Guti\'errez, H. A. (2009), \emph{Estrategias de muestreo: Dise\~no de encuestas y estimaci\'on de par\'ametros}. 
-Editorial Universidad Santo Tom\'as.
+Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
+Editorial Universidad Santo Tomás.
 }
 \examples{
 ############

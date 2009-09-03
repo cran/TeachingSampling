@@ -21,8 +21,8 @@ revenues and adjusting for the cost of doing business}
 }
 }
 \references{
-Guti\'errez, H. A. (2009), \emph{Estrategias de muestreo: Dise\~no de encuestas y estimaci\'on de par\'ametros}. 
-Editorial Universidad Santo Tom\'as.
+Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
+Editorial Universidad Santo Tomás.
 }
 \seealso{
 \code{\link{Marco}}

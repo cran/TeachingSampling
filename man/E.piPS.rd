@@ -19,18 +19,19 @@ the estimated variance of the Horvitz-Thompson estimator}
 \value{The function returns a data matrix whose columns correspond to the estimated parameters of the variables of interest}
 \author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Matei, A. and Till\'e, Y. (2005), Evaluation of Variance Approximations and Estimators in Maximun 
+Matei, A. and Tillé, Y. (2005), Evaluation of Variance Approximations and Estimators in Maximun
 Entropy Sampling with Unequal Probability and Fixed Sample Design. \emph{Journal of Official Statistics}. Vol 21, 4, 543-570.\cr
-Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Guti\'errez, H. A. (2009), \emph{Estrategias de muestreo: Dise\~no de encuestas y estimaci\'on de par\'ametros}. 
-Editorial Universidad Santo Tom\'as.
+Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
+Editorial Universidad Santo Tomás.
 }
 \examples{
-# Uses the Marco and Lucy data to draw a sample according to a piPS without replacement design
+# Uses the Marco and Lucy data to draw a sample according to a piPS
+# without replacement design
 data(Marco)
 data(Lucy)
 attach(Lucy)
-# The selection probability of each unit is proportional to the variable Income
+# The inclusion probability of each unit is proportional to the variable Income
 # The selected sample of size n=400
 n <- 400
 res <- S.piPS(n, Income)

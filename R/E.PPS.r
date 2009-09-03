@@ -7,7 +7,7 @@ colnames(Total)<-names(y)
 
 for(k in 1:dim(y)[2]){
 ty<-sum(y[,k]/pk)/m
-Vty<-(1/m)*(1/(m-1))*sum(pk*((y[,k]/pk-ty)^2))    
+Vty<-(1/m)*(1/(m-1))*sum((y[,k]/pk-ty)^2)
 CVe<-100*sqrt(Vty)/ty 
 Total[,k]<-c(ty,Vty,CVe)
 }

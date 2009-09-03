@@ -16,9 +16,9 @@ S.WR(N, m)
 \value{The function returns a vector of size \eqn{m}. Each element of this vector indicates the unit that was selected.}  
 \author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{      
-Till\'e, Y. (2006), \emph{Sampling Algorithms}. Springer.\cr
-Guti\'errez, H. A. (2009), \emph{Estrategias de muestreo: Dise\~no de encuestas y estimaci\'on de par\'ametros}. 
-Editorial Universidad Santo Tom\'as.
+Tillé, Y. (2006), \emph{Sampling Algorithms}. Springer.\cr
+Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
+Editorial Universidad Santo Tomás.
 }
 \examples{
 ############

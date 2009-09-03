@@ -17,9 +17,9 @@ unit in the selected sample}
 correspond to the totals of the variables of interest in each cluster}
 \author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Guti\'errez, H. A. (2009), \emph{Estrategias de muestreo: Dise\~no de encuestas y estimacion de par\'ametros}. 
-Editorial Universidad Santo Tom\'as.
+Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimacion de parámetros}.
+Editorial Universidad Santo Tomás.
 }
 \examples{
 ############

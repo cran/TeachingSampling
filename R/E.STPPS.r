@@ -18,7 +18,7 @@ pke<-pk[e,]
 ye<-as.matrix(ye)
 tye<-matrix(1,1,dim(ye)[1])%*%(ye/pke)/mh[k]
 tye2<-t(matrix(tye,dim(y)[2],mh[k]))
-Vtye<-(1/mh[k])*(1/(mh[k]-1))*colSums(pke*((ye/pke-tye2)^2))
+Vtye<-(1/mh[k])*(1/(mh[k]-1))*colSums((ye/pke-tye2)^2)
 CVe<-100*sqrt(Vtye)/tye
 Estratos[1,,][k,]<-tye
 Estratos[2,,][k,]<-Vtye

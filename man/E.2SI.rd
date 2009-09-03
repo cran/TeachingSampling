@@ -22,9 +22,9 @@ coefficient of variation}
 \value{The function returns a data matrix whose columns correspond to the estimated parameters of the variables of interest}
 \author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Guti\'errez, H. A. (2009), \emph{Estrategias de muestreo: Dise\~no de encuestas y estimaci\'on de par\'ametros}. 
-Editorial Universidad Santo Tom\'as.
+Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
+Editorial Universidad Santo Tomás.
 }
 \examples{
 ############
@@ -63,7 +63,8 @@ ni<-c(n1,n2,n3)
 sam1<-S.SI(N1,n1)
 sam2<-S.SI(N2,n2)
 sam3<-S.SI(N3,n3)
-# The information about each Secondary Sampling Unit in the PSUs is saved in data1 ... data3
+# The information about each Secondary Sampling Unit in the PSUs
+# is saved in data1 ... data3
 data1<-Lucy1[sam1,]
 data2<-Lucy2[sam2,]
 data3<-Lucy3[sam3,]
@@ -81,7 +82,8 @@ E.2SI(NI,nI,Ni,ni,estima,Cluster)
 ########################################################
 ## Example 2 Total Census to the entire population
 ########################################################
-# Uses the Marco and Lucy data to draw a cluster random sample accordind to a SI design
+# Uses the Marco and Lucy data to draw a cluster random sample
+# accordind to a SI design ...
 # Zone is the clustering variable
 data(Marco)
 attach(Marco)
@@ -127,7 +129,8 @@ data2<-Lucy2[sam2,]
 data3<-Lucy3[sam3,]
 data4<-Lucy4[sam4,]
 data5<-Lucy5[sam5,]
-# The information about each Secondary Sampling Unit in the sample (census) is saved in data
+# The information about each Secondary Sampling Unit
+# in the sample (census) is saved in data
 data<-rbind(data1, data2, data3, data4, data5)
 attach(data)
 # The clustering variable is Zone

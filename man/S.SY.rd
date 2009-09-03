@@ -18,8 +18,8 @@ S.SY(N, a)
 Kristýna Stodolová \email{Kristyna.Stodolova@seznam.cz} for valuable suggestions.}
 \references{
 Madow, L.H. and Madow, W.G. (1944), On the theory of systematic sampling. \emph{Annals of Mathematical Statistics}. 15, 1-24.\cr
-Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling. Springer}.\cr
-Guti\'errez, H. A. (2009), \emph{Estrategias de muestreo: Dise\~no de encuestas y estimaci\'on de par\'ametros}. 
+Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling. Springer}.\cr
+Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
 Editorial Universidad Santo Tom\'as.
 }
 \examples{
