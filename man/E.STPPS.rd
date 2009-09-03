@@ -28,7 +28,7 @@ Editorial Universidad Santo Tomás.
 }
 \examples{
 # Uses the Marco and Lucy data to draw a stratified random sample 
-# according to a SI design in each stratum
+# according to a PPS design in each stratum
 data(Marco)
 data(Lucy)
 attach(Lucy)

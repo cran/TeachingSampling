@@ -8,7 +8,7 @@ PikHol(n,sigma,e)
 \arguments{
 \item{n}{Vector of optimnal sample sizes for each of the characteristics of interest.}
 \item{sigma}{A matrix containing the size measures for each characteristics of interest.}
-\item{e}{Maximun allowed error under the ANOREL approach}
+\item{e}{Maximun allowed error under the ANOREL approach.}
 }
 \details{Assuming that all o fthe characteristic of interest are equally important, the Holmberg's sampling desing
 yields the following inclusion probabilities
