@@ -30,7 +30,7 @@ Editorial Universidad Santo Tomás.
 U <- c("Yves", "Ken", "Erik", "Sharon", "Leslie")
 # The auxiliary information
 x <- c(52, 60, 75, 100, 50)
-# Draws a piPS sample with replacement of size m=3
+# Draws a piPS sample without replacement of size n=3
 res <- S.piPS(3,x)
 res
 sam <- res[,1] 

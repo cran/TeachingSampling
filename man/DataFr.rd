@@ -36,7 +36,7 @@ population and the domains of interest (in this specific order).
 \seealso{
 \code{\link{TbLatex}}
 }
-\value{This function returns a DataFr objecto in order to include in the TbLatex function to generate a tex file containing the saurvey
+\value{This function returns a DataFr object in order to include in the TbLatex function to generate a tex file containing the saurvey
 sampling tables for a report.}
 \author{Jorge Eduardo Ortiz Pinilla \email{jorgeortiz@usantotomas.edu.co} with contributions from 
 Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
@@ -382,9 +382,12 @@ F3<-round(F3,2)
 F4<-round(F4,2)
 
 # Table Camp T   T2  T3 T4 Ct  C2   C3   C4
-D1<-c(32, 1,  results.d[1,4,1], results.d[1,1:3,1], results.d[3,4,1], results.d[3,1:3,1])
-D2<-c(32, 5,  results.d[1,4,2], results.d[1,1:3,2], results.d[3,4,2], results.d[3,1:3,2])
-D3<-c(32, 6,  results.d[1,4,3], results.d[1,1:3,3], results.d[3,4,3], results.d[3,1:3,3])
+D1<-c(32, 1,  results.d[1,4,1], results.d[1,1:3,1], 
+      results.d[3,4,1], results.d[3,1:3,1])
+D2<-c(32, 5,  results.d[1,4,2], results.d[1,1:3,2], 
+      results.d[3,4,2], results.d[3,1:3,2])
+D3<-c(32, 6,  results.d[1,4,3], results.d[1,1:3,3], 
+      results.d[3,4,3], results.d[3,1:3,3])
 
 #Optional: rounds the estimated values and its corresponding cve's
 D1<-round(D1,2)
@@ -392,10 +395,14 @@ D2<-round(D2,2)
 D3<-round(D3,2)
 
 # Table Camp T   T2  T3 T4 Ct  C2   C3   C4
-Y1<-c(33, 1,  results.d[1,4,2], results.d[1,1:3,2], results.d[3,4,2], results.d[3,1:3,2])
-Y2<-c(33, 2,  results.y[1,4,2], results.y[1,1:3,2], results.y[3,4,2], results.y[3,1:3,2])
-Y3<-c(33, 3,  results.y[1,4,3], results.y[1,1:3,3], results.y[3,4,3], results.y[3,1:3,3])
-Y4<-c(33, 4,  results.y[1,4,4], results.y[1,1:3,4], results.y[3,4,4], results.y[3,1:3,4])
+Y1<-c(33, 1,  results.d[1,4,2], results.d[1,1:3,2], 
+    results.d[3,4,2], results.d[3,1:3,2])
+Y2<-c(33, 2,  results.y[1,4,2], results.y[1,1:3,2], 
+    results.y[3,4,2], results.y[3,1:3,2])
+Y3<-c(33, 3,  results.y[1,4,3], results.y[1,1:3,3], 
+    results.y[3,4,3], results.y[3,1:3,3])
+Y4<-c(33, 4,  results.y[1,4,4], results.y[1,1:3,4], 
+    results.y[3,4,4], results.y[3,1:3,4])
 
 #Optional: rounds the estimated values and its corresponding cve's
 Y1<-round(Y1,2)
@@ -404,10 +411,14 @@ Y3<-round(Y3,2)
 Y4<-round(Y4,2)
 
 # Table Camp T   T2  T3 T4 Ct  C2   C3   C4
-N1<-c(34, 1,  results.d[1,4,3], results.d[1,1:3,3], results.d[3,4,3], results.d[3,1:3,3])
-N2<-c(34, 2,  results.n[1,4,2], results.n[1,1:3,2], results.n[3,4,2], results.n[3,1:3,2])
-N3<-c(34, 3,  results.n[1,4,3], results.n[1,1:3,3], results.n[3,4,3], results.n[3,1:3,3])
-N4<-c(34, 4,  results.n[1,4,4], results.n[1,1:3,4], results.n[3,4,4], results.n[3,1:3,4])
+N1<-c(34, 1,  results.d[1,4,3], results.d[1,1:3,3], 
+    results.d[3,4,3], results.d[3,1:3,3])
+N2<-c(34, 2,  results.n[1,4,2], results.n[1,1:3,2], 
+    results.n[3,4,2], results.n[3,1:3,2])
+N3<-c(34, 3,  results.n[1,4,3], results.n[1,1:3,3], 
+    results.n[3,4,3], results.n[3,1:3,3])
+N4<-c(34, 4,  results.n[1,4,4], results.n[1,1:3,4], 
+    results.n[3,4,4], results.n[3,1:3,4])
 
 #Optional: rounds the estimated values and its corresponding cve's
 N1<-round(N1,2)

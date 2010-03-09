@@ -41,7 +41,7 @@ N <- length(U)
 # The sample size is m=2
 m <- 2
 # pk is the probability of selection of every single unit
-pk <- c(0.9, 0.025, 0.025, 0.025, 0.025)
+pk <- c(0.35, 0.225, 0.175, 0.125, 0.125)
 # Selection of a random sample with replacement
 sam <- sample(5,2, replace=TRUE, prob=pk)
 # The selected sample is
@@ -54,6 +54,7 @@ y3[sam,]
 HH(y1[sam],pk[sam])
 HH(y2[sam],pk[sam])
 HH(y3[sam,],pk[sam])
+
 
 ############
 ## Example 2
