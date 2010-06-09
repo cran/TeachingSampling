@@ -1,7 +1,7 @@
 S.piPS<-function(n,x,e=runif(length(x)))
 {
 N <- length(x)
-pro <- Pik <- (n*x)/sum(x)
+pro <- Pik <- PikPPS(n,x)
 x1 <- sort(x,decreasing = TRUE)
 Pik <- (n*x1)/sum(x1)
 V <- cumsum(Pik)

@@ -14,7 +14,7 @@ S.STSI(S, Nh, nh)
 \code{\link{E.STSI}}
 }
 \details{The selected sample is drawn according to a selection-rejection (list-sequential) algorithm in each stratum}
-\value{The function returns a vector of size \eqn{n=n_1+\cdots+n_h}. Each element of this vector indicates the unit that was selected.}   
+\value{The function returns a vector of size \eqn{n=n_1+\cdots+n_H}. Each element of this vector indicates the unit that was selected.}   
 \author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{      
 Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
