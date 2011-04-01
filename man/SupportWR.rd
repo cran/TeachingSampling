@@ -34,11 +34,11 @@ m <- 2
 # Under this context, there are ten (10) possibles samples
 SupportWR(N, m)
 # The same support, but labeled
-SupportWR(N,m,ID=U)
+SupportWR(N, m, ID=U)
 # y is the variable of interest
 y<-c(32,34,46,89,35)
 # The following output is very useful when checking 
 # the design-unbiasedness of an estimator
-SupportWR(N,m,ID=y)
+SupportWR(N, m, ID=y)
 }
 \keyword{survey}

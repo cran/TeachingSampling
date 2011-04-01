@@ -127,5 +127,47 @@ x<-Doma*Taxes
 tx <- c(6251,16293,6110)
 b <- E.Beta(estima,x,Pik,ck=1,b0=FALSE)
 GREG.SI(N,n,estima,x,tx, b, b0=FALSE) 
+
+######################################################################
+## Example 3: Domains estimation trough the postestratified estimator
+######################################################################
+
+# Draws a simple random sample without replacement
+data(Marco)
+data(Lucy)
+
+N <- dim(Marco)[1]
+n <- 400
+sam <- S.SI(N,n)
+# The information about the units in the sample is stored in an object called data
+data <- Lucy[sam,]
+attach(data)
+names(data)
+# Vector of inclusion probabilities for units in the selected sample
+Pik<-rep(n/N,n)
+# The auxiliary information is discrete type
+Doma<-Domains(Level)
+
+########### Poststratified common mean model for the Income total in each poststratum ###################
+
+estima<-Doma*Income
+tx <- c(937, 1459)
+b <- E.Beta(estima,Doma,Pik,ck=1,b0=FALSE)
+GREG.SI(N,n,estima,Doma,tx, b, b0=FALSE) 
+
+########### Poststratified common mean model for the Employees total in each poststratum ###################
+
+estima<-Doma*Employees
+tx <- c(937, 1459)
+b <- E.Beta(estima,Doma,Pik,ck=1,b0=FALSE)
+GREG.SI(N,n,estima,Doma,tx, b, b0=FALSE) 
+
+########### Poststratified common mean model for the Taxes total in each poststratum ###################
+
+estima<-Doma*Taxes
+tx <- c(937, 1459)
+b <- E.Beta(estima,Doma,Pik,ck=1,b0=FALSE)
+GREG.SI(N,n,estima,Doma,tx, b, b0=FALSE) 
+
 }
 \keyword{survey}
