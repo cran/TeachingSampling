@@ -1,15 +1,13 @@
 \name{HH}
 \alias{HH}
 \title{The Hansen-Hurwitz Estimator}
-\description{Computes the Hansen-Hurwitz Estimator estimator of the population total for several
-variables of interest}
+\description{Computes the Hansen-Hurwitz Estimator estimator of the population total for several variables of interest}
 \usage{
 HH(y, pk)
 }
 \arguments{
-\item{y}{Vector, matrix or data frame containig the recollected information of the variables of interest for every
-unit in the selected sample}
-\item{pk}{A vetor containing selection probabilities for each unit in the selected sample}
+\item{y}{Vector, matrix or data frame containing the recollected information of the variables of interest for every unit in the selected sample}
+\item{pk}{A vector containing selection probabilities for each unit in the selected sample}
 }
 \seealso{
 \code{\link{HT}}
@@ -19,12 +17,12 @@ unit in the selected sample}
 where \eqn{y_i} is the value of the variables of interest for the \eqn{i}th unit, and \eqn{p_i} is its corresponding 
 selection probability. This estimator is restricted to with replacement sampling designs.
 }
-\value{The function returns a data matrix whose columns correspond to the estimated parameters of the variables of interest}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\value{The function returns a vector of total population estimates for each variable of interest, its estimated standard error and its estimated coefficient of variation.}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -59,11 +57,11 @@ HH(y3[sam,],pk[sam])
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a simple random sample with replacement
-data(Marco)
+# Uses the Lucy data to draw a simple random sample with replacement
 data(Lucy)
+attach(Lucy)
 
-N <- dim(Marco)[1]
+N <- dim(Lucy)[1]
 m <- 400
 sam <- sample(N,m,replace=TRUE)
 # The vector of selection probabilities of units in the sample

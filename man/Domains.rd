@@ -11,15 +11,15 @@ Domains(y)
 \seealso{
 \code{\link{E.SI}}
 }
-\details{Each value of y represents the doamin which a specified unit belongs}
+\details{Each value of y represents the domain which a specified unit belongs}
 \value{The function returns a \eqn{n\times p} matrix, where \eqn{n} is the number of units in the selected 
 sample and \eqn{p} is the number of categories of the domain of interest. The values of this matrix are zero,  if the unit does not 
-belogns to a specified category and one, otherwise.}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
-\references{      
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992),  \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+belongs to a specified category and one, otherwise.}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\references{
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -32,12 +32,12 @@ Domains(x)
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a random sample of units according 
+# Uses the Lucy data to draw a random sample of units according 
 # to a SI design
-data(Marco)
 data(Lucy)
+attach(Lucy)
 
-N <- dim(Marco)[1]
+N <- dim(Lucy)[1]
 n <- 400
 sam <- sample(N,n)
 # The information about the units in the sample is stored in an object called data

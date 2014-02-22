@@ -1,7 +1,7 @@
 \name{S.SY}
 \alias{S.SY}
 \title{Systematic Sampling}
-\description{Draws a Systematyc sample of size $n$ from a population of size $N$}
+\description{Draws a Systematic sample of size $n$ from a population of size $N$}
 \usage{
 S.SY(N, a)
 }
@@ -12,15 +12,15 @@ S.SY(N, a)
 \seealso{
 \code{\link{E.SY}}
 }
-\details{The selected sample is drawn acording to a random start.}
+\details{The selected sample is drawn according to a random start.}
 \value{The function returns a vector of size \eqn{n}. Each element of this vector indicates the unit that was selected.}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}. The author acknowledges to
-Kristýna Stodolová \email{Kristyna.Stodolova@seznam.cz} for valuable suggestions.}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}. The author acknowledges to
+Kristina Stodolova \email{Kristyna.Stodolova@seznam.cz} for valuable suggestions.}
 \references{
 Madow, L.H. and Madow, W.G. (1944), On the theory of systematic sampling. \emph{Annals of Mathematical Statistics}. 15, 1-24.\cr
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling. Springer}.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tom\'as.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling. Springer}.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -39,15 +39,16 @@ U[sam]
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a Systematic sample
-data(Marco)
+# Uses the Lucy data to draw a Systematic sample
+data(Lucy)
+attach(Lucy)
 
-N <- dim(Marco)[1]
-# The population is divided in 6 groups of size 399 or 400 
+N <- dim(Lucy)[1]
+# The population is divided in 6 groups
 # The selected sample
 sam <- S.SY(N,6)
 # The information about the units in the sample is stored in an object called data
-data <- Marco[sam,]
+data <- Lucy[sam,]
 data
 dim(data)
 }

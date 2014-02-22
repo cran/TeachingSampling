@@ -1,7 +1,7 @@
 \name{S.PPS}
 \alias{S.PPS}
 \title{Probability Proportional to Size Sampling With Replacement}
-\description{Draws a probability proportional to size sample witht replacement of size $m$ from a population of size $N$}
+\description{Draws a probability proportional to size sample with replacement of size \eqn{m} from a population of size \eqn{N}}
 \usage{
 S.PPS(m,x)
 }
@@ -12,14 +12,14 @@ S.PPS(m,x)
 \seealso{
 \code{\link{E.PPS}}
 }
-\details{The selected sample is drawn acording to the cumulative total method (sequential-list procedure)}
+\details{The selected sample is drawn according to the cumulative total method (sequential-list procedure)}
 \value{The function returns a matrix of \eqn{m} rows and two columns. Each element of the first column indicates the unit that
 was selected. Each element of the second column indicates the selection probability of this unit} 
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -38,11 +38,12 @@ U[sam]
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a random sample according to a 
+# Uses the Lucy data to draw a random sample according to a 
 # PPS with replacement design
 data(Lucy)
 attach(Lucy)
 # The selection probability of each unit is proportional to the variable Income
+m <- 400
 res<-S.PPS(400,Income)
 # The selected sample
 sam <- res[,1]

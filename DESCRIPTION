@@ -2,16 +2,15 @@ Package: TeachingSampling
 Type: Package
 Title: Sampling designs and parameter estimation in finite population
 License: GPL (>= 2)
-Version: 2.0.1
-Date: 2011-04-01
+Version: 3.1.1
+Date: 2014-02-22
 Author: Hugo Andres Gutierrez Rojas <hugogutierrez@usantotomas.edu.co>
 Maintainer: Hugo Andres Gutierrez Rojas
         <hugogutierrez@usantotomas.edu.co>
 Depends: R (>= 2.6.0)
 Description: Foundations of inference in survey sampling
-URL:
-        http://www.gutierrezandres.com/software/the-teachingsampling-package
 Encoding: latin1
-Packaged: 2012-10-29 08:57:45 UTC; ripley
+Packaged: 2014-03-08 17:39:00 UTC; psirusteam
 Repository: CRAN
-Date/Publication: 2012-10-29 08:57:45
+Date/Publication: 2014-03-10 17:14:06
+NeedsCompilation: no

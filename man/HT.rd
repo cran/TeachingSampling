@@ -7,9 +7,9 @@ variables of interest}
 HT(y, Pik)
 }
 \arguments{
-\item{y}{Vector, matrix or data frame containig the recollected information of the variables of interest for every
+\item{y}{Vector, matrix or data frame containing the recollected information of the variables of interest for every
 unit in the selected sample}
-\item{Pik}{A vetor containing the inclusion probabilities for each unit in the selected sample}
+\item{Pik}{A vector containing the inclusion probabilities for each unit in the selected sample}
 }
 \seealso{
 \code{\link{HH}}
@@ -21,25 +21,25 @@ its corresponding inclusion probability. This estimator could be used for withou
 as well as for with replacement designs.
 }
 \value{The function returns a vector of total population estimates for each variable of interest.}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
 ## Example 1
 ############
-# Uses the Marco and Lucy data to draw a simple random sample without replacement
-data(Marco)
+# Uses the Lucy data to draw a simple random sample without replacement
 data(Lucy)
+attach(Lucy)
 
-N <- dim(Marco)[1]
+N <- dim(Lucy)[1]
 n <- 400
 sam <- sample(N,n)
 # The vector of inclusion probabilities for each unit in the sample
-Pik <- rep(n/N,n)
+pik <- rep(n/N,n)
 # The information about the units in the sample is stored in an object called data
 data <- Lucy[sam,]
 attach(data)
@@ -47,22 +47,21 @@ names(data)
 # The variables of interest are: Income, Employees and Taxes
 # This information is stored in a data frame called estima
 estima <- data.frame(Income, Employees, Taxes)
-HT(estima, Pik)
+HT(estima, pik)
 
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a simple random sample with replacement
-data(Marco)
+# Uses the Lucy data to draw a simple random sample with replacement
 data(Lucy)
 
-N <- dim(Marco)[1]
+N <- dim(Lucy)[1]
 m <- 400
 sam <- sample(N,m,replace=TRUE)
 # The vector of selection probabilities of units in the sample
 pk <- rep(1/N,m)
 # Computation of the inclusion probabilities
-Pik <- 1-(1-pk)^m
+pik <- 1-(1-pk)^m
 # The information about the units in the sample is stored in an object called data
 data <- Lucy[sam,]
 attach(data)
@@ -70,7 +69,7 @@ names(data)
 # The variables of interest are: Income, Employees and Taxes
 # This information is stored in a data frame called estima
 estima <- data.frame(Income, Employees, Taxes)
-HT(estima, Pik)
+HT(estima, pik)
 
 ############
 ## Example 3
@@ -118,7 +117,7 @@ m <- 2
 # pk is the probability of selection of every single unit
 pk <- c(0.9, 0.025, 0.025, 0.025, 0.025)
 # Computation of the inclusion probabilities
-Pik <- 1-(1-pk)^m
+pik <- 1-(1-pk)^m
 # Selection of a random sample with replacement
 sam <- sample(5,2, replace=TRUE, prob=pk)
 # The selected sample
@@ -195,9 +194,9 @@ Ind <- IkRS(N)
 Ind
 # p is the probability of selection of every possible sample
 p <- c(0.59049, 0.06561, 0.06561, 0.06561, 0.06561, 0.06561, 0.00729, 0.00729,
-0.00729, 0.00729, 0.00729, 0.00729, 0.00729, 0.00729, 0.00729, 0.00729, 0.00081,
-0.00081, 0.00081, 0.00081, 0.00081, 0.00081, 0.00081, 0.00081, 0.00081, 0.00081,
-0.00009, 0.00009, 0.00009, 0.00009, 0.00009, 0.00001)
+       0.00729, 0.00729, 0.00729, 0.00729, 0.00729, 0.00729, 0.00729, 0.00729, 0.00081,
+       0.00081, 0.00081, 0.00081, 0.00081, 0.00081, 0.00081, 0.00081, 0.00081, 0.00081,
+       0.00009, 0.00009, 0.00009, 0.00009, 0.00009, 0.00001)
 sum(p)
 # Computation of the inclusion probabilities
 inclusion <- Pik(p, Ind)
@@ -241,8 +240,8 @@ HT31<- HT(y[Ind[31,]==1], inclusion[Ind[31,]==1])
 HT32<- HT(y[Ind[32,]==1], inclusion[Ind[32,]==1])
 # The HT estimates arranged in a vector
 Est <- c(HT1, HT2, HT3, HT4, HT5, HT6, HT7, HT8, HT9, HT10, HT11, HT12, HT13,
-HT14, HT15, HT16, HT17, HT18, HT19, HT20, HT21, HT22, HT23, HT24, HT25, HT26, 
-HT27, HT28, HT29, HT30, HT31, HT32)
+         HT14, HT15, HT16, HT17, HT18, HT19, HT20, HT21, HT22, HT23, HT24, HT25, HT26, 
+         HT27, HT28, HT29, HT30, HT31, HT32)
 Est
 # The HT is actually desgn-unbiased
 data.frame(Ind, Est, p)
@@ -294,32 +293,11 @@ HT14 <- HT(y[Ind[14,]==1], pik[Ind[14,]==1])
 HT15 <- HT(y[Ind[15,]==1], pik[Ind[15,]==1])
 # The HT estimates arranged in a vector
 Est <- c(HT1, HT2, HT3, HT4, HT5, HT6, HT7, HT8, HT9, HT10, HT11, HT12, HT13,
-HT14, HT15)
+         HT14, HT15)
 Est
 # The HT is actually desgn-unbiased
 data.frame(Ind, Est, p)
 sum(Est*p)
 sum(y)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 \keyword{survey}

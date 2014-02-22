@@ -1,7 +1,7 @@
 \name{S.WR}
 \alias{S.WR}
 \title{Simple Random Sampling With Replacement}
-\description{Draws a simple random sample witht replacement of size $m$ from a population of size $N$}
+\description{Draws a simple random sample witht replacement of size \eqn{m} from a population of size \eqn{N}}
 \usage{
 S.WR(N, m)
 }
@@ -14,11 +14,11 @@ S.WR(N, m)
 }
 \details{The selected sample is drawn according to a sequential procedure algorithm based on a binomial distribution}
 \value{The function returns a vector of size \eqn{m}. Each element of this vector indicates the unit that was selected.}  
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{      
-Tillé, Y. (2006), \emph{Sampling Algorithms}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Tille, Y. (2006), \emph{Sampling Algorithms}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -35,12 +35,12 @@ U[sam]
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a random sample of units accordind to a
+# Uses the Lucy data to draw a random sample of units accordind to a
 # simple random sampling with replacement design
-data(Marco)
 data(Lucy)
+attach(Lucy)
 
-N <- dim(Marco)[1]
+N <- dim(Lucy)[1]
 m <- 400
 sam<-S.WR(N,m)
 # The information about the units in the sample is stored in an object called data

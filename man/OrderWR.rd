@@ -1,7 +1,7 @@
 \name{OrderWR}
 \alias{OrderWR}
 \title{Pseudo-Support for Fixed Size With Replacement Sampling Designs}
-\description{Creates a matrix containing every possible ordered sample under fixed sample size with relacement designs}
+\description{Creates a matrix containing every possible ordered sample under fixed sample size with replacement designs}
 \usage{
 OrderWR(N,m,ID=FALSE)
 }
@@ -17,12 +17,11 @@ OrderWR(N,m,ID=FALSE)
 of ordered samples induced by a with replacement sampling design.}
 \value{The function returns a matrix of \eqn{N^m} rows and \eqn{m} columns. Each row of this matrix
 corresponds to a possible ordered sample.}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}. The author acknowledges to
-Hanwen Zhang \email{hanwenzhang@usantotomas.edu.co} for valuable suggestions.}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}. The author acknowledges to Hanwen Zhang \email{hanwenzhang@usantotomas.edu.co} for valuable suggestions.}
 \references{
-Tillé, Y. (2006), \emph{Sampling Algorithms}. Springer\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseñono de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás
+Tille, Y. (2006), \emph{Sampling Algorithms}. Springer\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas
 }
 \examples{
 # Vector U contains the label of a population

@@ -6,22 +6,22 @@
 E.Quantile(y, Qn, Pik)
 }
 \arguments{
-\item{y}{Vector, matrix or data frame containig the recollected information of the variables of interest for every
+\item{y}{Vector, matrix or data frame containing the recollected information of the variables of interest for every
 unit in the selected sample}
 \item{Qn}{Quantile of interest}
-\item{Pik}{A vetor containing inclusion probabilities for each unit in the sample. 
-If missing, the function will asign the same weights to each unit in the sample}
+\item{Pik}{A vector containing inclusion probabilities for each unit in the sample. 
+If missing, the function will assign the same weights to each unit in the sample}
 }
 \seealso{
 \code{\link{HT}}
 }
 \details{Returns the estimation of the population quantile of every single variable of interest}
 \value{The function returns a vector whose entries correspond to the estimated quantiles of the variables of interest}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -47,14 +47,15 @@ E.Quantile(z, 0.5, Pik)
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a PPS sample with replacement
-data(Marco)
+# Uses the Lucy data to draw a PPS sample with replacement
+
 data(Lucy)
 attach(Lucy)
 
 # The selection probability of each unit is proportional to the variable Income
 # The sample size is m=400
-res <- S.PPS(400,Income)
+m=400
+res <- S.PPS(m,Income)
 # The selected sample
 sam <- res[,1]
 # The information about the units in the sample is stored in an object called data
@@ -63,7 +64,7 @@ attach(data)
 # The vector of selection probabilities of units in the sample
 pk.s <- res[,2]
 # The vector of inclusion probabilities of units in the sample
-Pik.s<-1-(1-pk.s)^400
+Pik.s<-1-(1-pk.s)^m
 # The information about the sample units is stored in an object called data
 data <- Lucy[sam,]
 attach(data)

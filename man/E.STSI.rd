@@ -9,29 +9,28 @@ E.STSI(S, Nh, nh, y)
 \item{S}{Vector identifying the membership to the strata of each unit in the population}
 \item{Nh}{Vector of stratum sizes}      
 \item{nh}{Vector of sample sizes in each stratum}
-\item{y}{Vector, matrix or data frame containig the recollected information of the variables of interest for every
+\item{y}{Vector, matrix or data frame containing the recollected information of the variables of interest for every
 unit in the selected sample}
 }
 \seealso{
 \code{\link{S.STSI}}
 }
-\details{Returns the estimation of the population total of every single variable of interest, its estimated variance and its
-estimated coefficient of variation in all of the strata and finally in the entire population}
-\value{The function returns an array composed by several  matrices representing each varible of interest. The columns of each matrix
+\details{Returns the estimation of the population total of every single variable of interest, its estimated standard error and its estimated coefficient of variation in all of the strata and finally in the entire population}
+\value{The function returns an array composed by several  matrices representing each variable of interest. The columns of each matrix
 correspond to the estimated parameters of the variables of interest in each stratum and in the entire population}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
 ## Example 1
 ############
-# Uses the Marco and Lucy data to draw a stratified random sample 
+# Uses the Lucy data to draw a stratified random sample 
 # according to a SI design in each stratum
-data(Marco)
+
 data(Lucy)
 attach(Lucy)
 # Level is the stratifying variable
@@ -43,9 +42,9 @@ N3<-summary(Level)[[3]]
 N1;N2;N3
 Nh <- c(N1,N2,N3)
 # Defines the sample size at each stratum
-n1<-14
-n2<-123
-n3<-263
+n1<-70
+n2<-100
+n3<-200
 nh<-c(n1,n2,n3)
 # Draws a stratified sample
 sam <- S.STSI(Level, Nh, nh)

@@ -6,7 +6,7 @@
 VarHT(y, N, n, p)
 }
 \arguments{
-\item{y}{Vector containig the recollected information of the characteristic of interest for every unit in the population}
+\item{y}{Vector containing the recollected information of the characteristic of interest for every unit in the population}
 \item{N}{Population size}
 \item{n}{Sample size}
 \item{p}{A vector containing the selection probabilities of a fixed size without replacement sampling design. The sum of the values of this vector must be one}
@@ -18,11 +18,11 @@ VarHT(y, N, n, p)
 \deqn{Var_p(\hat{t}_{y,\pi})=\sum_{k\in U}\sum_{l \in U}\Delta_{kl}\frac{y_k}{\pi_k}\frac{y_l}{\pi_l}}
 }
 \value{The function returns the value of the theoretical variances of the Horviz-Thompson estimator.}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 # Without replacement sampling

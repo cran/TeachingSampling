@@ -1,7 +1,7 @@
 \name{S.BE}
 \alias{S.BE}
 \title{Bernoulli Sampling Without Replacement}
-\description{Draws a Bernoulli sample withtout replacement of expected size $n$ from a population of size $N$}
+\description{Draws a Bernoulli sample without replacement of expected size $n$ from a population of size $N$}
 \usage{
 S.BE(N, prob)
 }
@@ -12,17 +12,17 @@ S.BE(N, prob)
 \seealso{
 \code{\link{E.BE}}
 }
-\details{The selected sample is drawn acording to a sequential procedure algorithm based on an uniform distribution. The Bernoulli
+\details{The selected sample is drawn according to a sequential procedure algorithm based on an uniform distribution. The Bernoulli
 sampling design is not a fixed sample size one.}
 \value{The function returns a vector of size \eqn{N}. Each element of this vector indicates if the unit was selected. Then,
 if the value of this vector for unit \eqn{k} is zero, the unit \eqn{k} was not selected in the sample; otherwise, the unit was
 selected in the sample.}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.\cr
-Tillé, Y. (2006), \emph{Sampling Algorithms}. Springer.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.\cr
+Tille, Y. (2006), \emph{Sampling Algorithms}. Springer.
 }
 \examples{
 ############
@@ -40,14 +40,14 @@ U[sam]
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a Bernoulli sample
-data(Marco)
+# Uses the Lucy data to draw a Bernoulli sample
+
 data(Lucy)
 attach(Lucy)
-N <- dim(Marco)[1]
-# The population size is 2396. If the expected sample size is 400,
+N <- dim(Lucy)[1]
+# The population size is 2396. If the expected sample size is 400
 # then, the inclusion probability must be 400/2396=0.1669
-sam <- S.BE(N,0.1669)
+sam <- S.BE(N,0.01669)
 # The information about the units in the sample is stored in an object called data
 data <- Lucy[sam,]
 data

@@ -7,24 +7,24 @@ inclusion probabilities for a sampling design proportional to an auxiliary varia
 PikPPS(n,x)
 }
 \arguments{
-\item{n}{Integer indicating the smaple size}      
+\item{n}{Integer indicating the sample size}      
 \item{x}{Vector of auxiliary information for each unit in the population}
 }
 \seealso{
 \code{\link{PikHol}, \link{E.piPS}, \link{S.piPS}}
 }
-\details{For a given vector of auxiliary information with value \eqn{x_k} for the \eqn{k}-th unith and 
+\details{For a given vector of auxiliary information with value \eqn{x_k} for the \eqn{k}-th unit and 
 population total \eqn{t_x}, the following expression 
 \deqn{\pi_k=n\times \frac{x_k}{t_x}}
 is not always less than unity. A sequential algorithm must be used in order to ensure that for every
 unit in the population the inclusion probability gives less or equal to unity.}
 \value{The function returns a vector of inclusion probabilities of size \eqn{N}. 
-Every element of this vector is a value between cero and one.}   
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
-\references{      
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Every element of this vector is a value between zero and one.}   
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\references{
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -56,13 +56,12 @@ sum(pik)
 ############
 ## Example 3
 ############
-# Uses the Marco and Lucy data to compute teh vector of inclusion probabilities 
+# Uses the Lucy data to compute teh vector of inclusion probabilities 
 # accordind to a piPS without replacement design
-data(Marco)
 data(Lucy)
 attach(Lucy)
 # The sample size
-n=600
+n=400
 # The selection probability of each unit is proportional to the variable Income
 pik <- PikPPS(n,Income)
 # The inclusion probabilities of the units in the sample

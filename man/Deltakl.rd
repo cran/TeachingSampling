@@ -17,13 +17,12 @@ Deltakl(N, n, p)
 \details{The \eqn{kl}th unit of the Variance-Covariance matrix of the sample membership indicators is defined as 
 \eqn{\Delta_{kl}=\pi_{kl}-\pi_k\pi_l}
 }
-\value{The function returns a symmetric matrix of size \eqn{N \times N} containing the variances-covariances among the 
-sample membership indicators for each pair of units in the finite population.}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\value{The function returns a symmetric matrix of size \eqn{N \times N} containing the variances-covariances among the sample membership indicators for each pair of units in the finite population.}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 # Vector U contains the label of a population of size N=5

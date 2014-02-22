@@ -15,13 +15,13 @@ Support(N, n, ID=FALSE)
 }
 \details{A support is defined as the set of samples such that for any sample in the support, all the permutations
 of the coordinates of the sample are also in the support}
-\value{The function returns a matrix of \eqn{binom{N}{n}} rows and \eqn{n} columns. Each row of this matrix 
+\value{The function returns a matrix of \eqn{binom(N)(n)} rows and \eqn{n} columns. Each row of this matrix 
 corresponds to a possible sample}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Tillé, Y. (2006), \emph{Sampling Algorithms}. Springer\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás
+Tille, Y. (2006), \emph{Sampling Algorithms}. Springer\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas
 }
 \examples{
 # Vector U contains the label of a population

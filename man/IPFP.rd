@@ -12,12 +12,12 @@ IPFP(Table, Col.knw, Row.knw, tol=0.0001)
 \item{tol}{The control value, by default equal to 0.0001}
 }
 \details{Adjust a contingency table on the know margins of the population with the Raking Ratio method}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
 Deming, W. & Stephan, F. (1940), On a least squares adjustment of a sampled frequency 
 table when the expected marginal totals are known. \emph{Annals of Mathematical Statistics}, 11, 427-444.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -39,8 +39,8 @@ IPFP(Table,Col.knw,Row.knw,tol=0.0001)
 ## Example 2
 ############
 # Draws a simple random sample
-data(Marco)
 data(Lucy)
+attach(Lucy)
 
 N<-dim(Lucy)[1]
 n<-400
@@ -57,16 +57,16 @@ SPAM.yes<-Doma2[,2]*Doma1
 # Estimation
 E.SI(N,n,Doma1)
 E.SI(N,n,Doma2)
-est1 <-E.SI(N,n,SPAM.no)
-est2 <-E.SI(N,n,SPAM.yes)
+est1 <-E.SI(N,n,SPAM.no)[,2:4]
+est2 <-E.SI(N,n,SPAM.yes)[,2:4]
 est1;est2
 # The contingency table estimated from above
 Table <- cbind(est1[1,],est2[1,])
 rownames(Table) <- c("Big", "Medium","Small")
 colnames(Table) <- c("SPAM.no", "SPAM.yes")
 # The known and true margins
-Col.knw <- c(937,1459)
-Row.knw<- c(83,737,1576)
+Col.knw <- colSums(Domains(Lucy$SPAM))
+Row.knw<- colSums(Domains(Lucy$Level))
 # The adjusted table
 IPFP(Table,Col.knw,Row.knw,tol=0.0001)
 }

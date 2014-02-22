@@ -12,7 +12,3 @@ S.SY<-function (N, a)
     sam
 }
 
-
-
-
-

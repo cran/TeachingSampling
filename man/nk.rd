@@ -1,9 +1,7 @@
 \name{nk}
 \alias{nk}
 \title{Sample Selection Indicator for With Replacement Sampling Designs}
-\description{Creates a matrix of values (0, if the unit does not belongs to a specified sample,
-1, if the unit is selected once in the sample, 2, if the unit is selected twice in the sample, etc.) 
-for every possible sample under fixed sample size designs with replacement}
+\description{The function returns a matrix of \eqn{binom(N+m-1)(m)} rows and \eqn{N} columns. Creates a matrix of values (0, if the unit does not belongs to a specified sample, 1, if the unit is selected once in the sample; 2, if the unit is selected twice in the sample, etc.) for every possible sample under fixed sample size designs with replacement}
 \usage{
 nk(N, m)
 }
@@ -14,13 +12,13 @@ nk(N, m)
 \seealso{
 \code{\link{SupportWR}, \link{Pik}}
 }
-\value{The function returns a matrix of \eqn{binom{N+m-1}{m}} rows and \eqn{N} columns. The \eqn{k}th column corresponds to the sample 
+\value{The function returns a matrix of \eqn{binom(N+m-1)(m)} rows and \eqn{N} columns. The \eqn{k}th column corresponds to the sample 
 selection indicator, of the \eqn{k}th unit, to a possible sample.}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 # Vector U contains the label of a population of size N=5

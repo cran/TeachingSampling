@@ -1,6 +1,6 @@
 \name{S.STPPS}
 \alias{S.STPPS}
-\title{Stratified Sampling Appliying PPS Design in all Strata}
+\title{Stratified Sampling Applying PPS Design in all Strata}
 \description{Draws a probability proportional to size simple random sample with 
 replacement of size \eqn{m_h} in stratum \eqn{h} of size \eqn{N_h}}
 \usage{
@@ -14,14 +14,14 @@ S.STPPS(S,x,mh)
 \seealso{
 \code{\link{E.STPPS}}
 }
-\details{The selected sample is drawn acording to the cumulative total method (sequential-list procedure) in each stratum}
+\details{The selected sample is drawn according to the cumulative total method (sequential-list procedure) in each stratum}
 \value{The function returns a matrix of \eqn{m=m_1+\cdots+m_h} rows and two columns. Each element of the first column indicates the unit that
 was selected. Each element of the second column indicates the selection probability of this unit}   
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
-\references{      
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer. \cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\references{
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -47,17 +47,17 @@ pk
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a stratified random sample 
+# Uses the Lucy data to draw a stratified random sample 
 # according to a PPS design in each stratum
-data(Marco)
+
 data(Lucy)
 attach(Lucy)
 # Level is the stratifying variable
 summary(Level)
 # Defines the sample size at each stratum
-m1<-14
-m2<-123
-m3<-263
+m1<-70
+m2<-100
+m3<-200
 mh<-c(m1,m2,m3)
 # Draws a stratified sample
 res<-S.STPPS(Level, Income, mh)

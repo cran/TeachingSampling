@@ -1,7 +1,7 @@
 \name{S.SI}
 \alias{S.SI}
 \title{Simple Random Sampling Without Replacement}
-\description{Draws a simple random sample without replacement of size $n$ from a population of size $N$}
+\description{Draws a simple random sample without replacement of size \eqn{n} from a population of size \eqn{N}}
 \usage{
 S.SI(N, n, e=runif(N))
 }
@@ -13,17 +13,17 @@ S.SI(N, n, e=runif(N))
 \seealso{
 \code{\link{E.SI}}
 }
-\details{The selected sample is drawn acording to a selection-rejection (list-sequential) algorithm}
+\details{The selected sample is drawn according to a selection-rejection (list-sequential) algorithm}
 \value{The function returns a vector of size \eqn{N}. Each element of this vector indicates if the unit was selected. Then, 
 if the value of this vector for unit \eqn{k} is zero, the unit \eqn{k} was not selected in the sample; otherwise, the unit was
 selected in the sample.}   
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{      
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
 Fan, C.T., Muller, M.E., Rezucha, I. (1962), Development of sampling plans by using sequential
 (item by item) selection techniques and digital computer, \emph{Journal of the American Statistical Association}, 57, 387-402.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############

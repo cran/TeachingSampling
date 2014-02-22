@@ -1,6 +1,6 @@
 \name{S.STSI}
 \alias{S.STSI}
-\title{Stratified sampling apppliying SI design in all strata}
+\title{Stratified sampling applying SI design in all strata}
 \description{Draws a simple random sample without replacement of size \eqn{n_h} in stratum \eqn{h} of size \eqn{N_h}}
 \usage{
 S.STSI(S, Nh, nh)
@@ -15,11 +15,11 @@ S.STSI(S, Nh, nh)
 }
 \details{The selected sample is drawn according to a selection-rejection (list-sequential) algorithm in each stratum}
 \value{The function returns a vector of size \eqn{n=n_1+\cdots+n_H}. Each element of this vector indicates the unit that was selected.}   
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
-\references{      
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\references{
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -43,11 +43,10 @@ U[sam]
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a stratified random sample
+# Uses the Lucy data to draw a stratified random sample
 #  accordind to a SI design in each stratum
-data(Marco)
 data(Lucy)
-attach(Marco)
+attach(Lucy)
 # Level is the stratifying variable
 summary(Level)
 # Defines the size of each stratum
@@ -57,9 +56,9 @@ N3<-summary(Level)[[3]]
 N1;N2;N3
 Nh <- c(N1,N2,N3)
 # Defines the sample size at each stratum
-n1<-14
-n2<-123
-n3<-263
+n1<-70
+n2<-100
+n3<-200
 nh<-c(n1,n2,n3)
 # Draws a stratified sample
 sam <- S.STSI(Level, Nh, nh)

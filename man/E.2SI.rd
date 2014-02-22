@@ -17,24 +17,22 @@ unit in the selected sample}
 \seealso{
 \code{\link{S.SI}}
 }
-\details{Returns the estimation of the population total of every single variable of interest, its estimated variance and its estimated 
-coefficient of variation}
+\details{Returns the estimation of the population total of every single variable of interest, its estimated standard error and its estimated coefficient of variation}
 \value{The function returns a data matrix whose columns correspond to the estimated parameters of the variables of interest}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Dise?o de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
 ## Example 1
 ############
-# Uses the Marco and Lucy data to draw a twostage simple random sample 
+# Uses Lucy data to draw a twostage simple random sample 
 # accordind to a 2SI design. Zone is the clustering variable
 data(Lucy)
-data(Marco)
-attach(Marco)
+attach(Lucy)
 summary(Zone)
 # The population of clusters or Primary Sampling Units
 UI<-c("A","B","C","D","E")
@@ -82,11 +80,11 @@ E.2SI(NI,nI,Ni,ni,estima,Cluster)
 ########################################################
 ## Example 2 Total Census to the entire population
 ########################################################
-# Uses the Marco and Lucy data to draw a cluster random sample
+# Uses Lucy data to draw a cluster random sample
 # accordind to a SI design ...
 # Zone is the clustering variable
-data(Marco)
-attach(Marco)
+data(Lucy)
+attach(Lucy)
 summary(Zone)
 # The population of clusters
 UI<-c("A","B","C","D","E")

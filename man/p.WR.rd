@@ -8,7 +8,7 @@ p.WR(N, m, pk)
 \arguments{
 \item{N}{Population size}
 \item{m}{Sample size}
-\item{pk}{A vetor containing selection probabilities for each unit in the population}
+\item{pk}{A vector containing selection probabilities for each unit in the population}
 }
 \details{Every with replacement sampling design is a particular case of a multinomial 
 distribution. 
@@ -16,11 +16,11 @@ distribution.
 where \eqn{n_k} is the number of times that the \eqn{k}-th unit is selected in a sample.
 }
 \value{The function returns a vector of selection probabilities for every with-replacement sample.}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tom\'as
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -29,7 +29,7 @@ Editorial Universidad Santo Tom\'as
 # With replacement simple random sampling
 # Vector U contains the label of a population of size N=5
 U <- c("Yves", "Ken", "Erik", "Sharon", "Leslie")
-# Vector pk is the selñection probability of the units in the finite population
+# Vector pk is the sel?ection probability of the units in the finite population
 pk <- c(0.2, 0.2, 0.2, 0.2, 0.2)
 sum(pk)
 N <- length(pk)
@@ -48,7 +48,7 @@ U <- c("Yves", "Ken", "Erik", "Sharon", "Leslie")
 # Vector x is the auxiliary information and y is the variables of interest
 x<-c(32, 34, 46, 89, 35)
 y<-c(52, 60, 75, 100, 50)
-# Vector pk is the selñection probability of the units in the finite population
+# Vector pk is the sel?ection probability of the units in the finite population
 pk <- x/sum(x)
 sum(pk)
 N <- length(pk)

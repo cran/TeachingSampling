@@ -12,17 +12,17 @@ S.PO(N, Pik)
 \seealso{
 \code{\link{E.PO}}
 }
-\details{The selected sample is drawn acording to a sequential procedure algorithm based on a uniform distribution. The Poisson
+\details{The selected sample is drawn according to a sequential procedure algorithm based on a uniform distribution. The Poisson
 sampling design is not a fixed sample size one.}
 \value{The function returns a vector of size \eqn{N}. Each element of this vector indicates if the unit was selected. Then,
 if the value of this vector for unit \eqn{k} is zero, the unit \eqn{k} was not selected in the sample; otherwise, the unit was
 selected in the sample.}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H.A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.\cr
-Till\'e, Y. (2006), \emph{Sampling Algorithms}. Springer.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.\cr
+Tille, Y. (2006), \emph{Sampling Algorithms}. Springer.
 }
 \examples{
 ############
@@ -41,14 +41,11 @@ U[sam]
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a Poisson sample
-data(Marco)
+# Uses the Lucy data to draw a Poisson sample
 data(Lucy)
 attach(Lucy)
 N <- dim(Lucy)[1]
-# The population size is 2396. The expected sample size is 400,
-# The inclusion probability is proportional to the variable Income
-n<-400
+n <- 400
 Pik<-n*Income/sum(Income)
 # None element of Pik bigger than one
 which(Pik>1)

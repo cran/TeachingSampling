@@ -4,7 +4,6 @@ nk<-rep(0,N)
   suma<-sum(nk)
   nk[k]<-rbinom(1,(m-suma),(1/(N-k+1)))
                }
-
 x<-which(nk>0)
 w<-nk[x]
 sam<-rep(x[1],w[1])

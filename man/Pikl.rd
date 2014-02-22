@@ -14,19 +14,19 @@ Pikl(N, n, p)
 \seealso{
 \code{\link{VarHT}, \link{Deltakl}, \link{Pik}}
 }
-\details{The secon-order inclusion probability of the \eqn{kl}th units is defined as the probability that unit \eqn{k} and unit 
+\details{The second-order inclusion probability of the \eqn{kl}th units is defined as the probability that unit \eqn{k} and unit 
 \eqn{l} will be both included in a sample; it is denoted by \eqn{\pi_{kl}} and obtained from a given sampling design as follows:
 \deqn{\pi_{kl}=\sum_{s\ni k,l}p(s)}
 }
 \value{The function returns a symmetric matrix of size \eqn{N \times N} containing the second-order inclusion probabilities 
 for each pair of units in the finite population.}
 \author{Helbert Novoa \email{helbertnovoa@ymail.com} with contributions from 
-Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co} 
+Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co} 
 and Hanwen Zhang \email{hanwenzhang@usantotomas.edu.co} }
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 # Vector U contains the label of a population of size N=5

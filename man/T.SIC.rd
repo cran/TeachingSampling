@@ -1,12 +1,12 @@
 \name{T.SIC}
 \alias{T.SIC} 
 \title{Computation of Population Totals for Clusters}
-\description{Computes the population total of the characteristics of interest in clusters}
+\description{Computes the population total of the characteristics of interest in clusters. This function is used in order to estimate totals when doing a Pure Cluster Sample.}
 \usage{
 T.SIC(y,Cluster)
 }
 \arguments{
-\item{y}{Vector, matrix or data frame containig the recollected information of the variables of interest for every
+\item{y}{Vector, matrix or data frame containing the recollected information of the variables of interest for every
 unit in the selected sample} 
 \item{Cluster}{Vector identifying the membership to the cluster of each unit in the selected sample of clusters}
 }
@@ -15,11 +15,11 @@ unit in the selected sample}
 }
 \value{The function returns a matrix of clusters totals. The columns of each matrix
 correspond to the totals of the variables of interest in each cluster}
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimacion de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -42,11 +42,10 @@ T.SIC(y3,Cluster)
 ########################################################
 ## Example 2 Sampling and estimation in Cluster smapling
 ########################################################
-# Uses the Marco and Lucy data to draw a clusters sample according to a SI design
+# Uses Lucy data to draw a clusters sample according to a SI design
 # Zone is the clustering variable
-data(Marco)
 data(Lucy)
-attach(Marco)
+attach(Lucy)
 summary(Zone)
 # The population of clusters
 UI<-c("A","B","C","D","E")
@@ -68,8 +67,8 @@ Cluster <- as.factor(as.integer(Zone))
 # The variables of interest are: Income, Employees and Taxes
 # This information is stored in a data frame called estima
 estima <- data.frame(Income, Employees, Taxes)
-y<-T.SIC(estima,Cluster)
+Ty<-T.SIC(estima,Cluster)
 # Estimation of the Population total
-E.SI(NI,nI,y)
+E.SI(NI,nI,Ty)
 }
 \keyword{survey}

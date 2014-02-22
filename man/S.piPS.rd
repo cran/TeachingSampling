@@ -1,7 +1,7 @@
 \name{S.piPS}
 \alias{S.piPS}
 \title{Probability Proportional to Size Sampling Without Replacement}
-\description{Draws a probability proportional to size sample withtout replacement of size $n$ from a population of size $N$}
+\description{Draws a probability proportional to size sample without replacement of size \eqn{n} from a population of size \eqn{N}.}
 \usage{
 S.piPS(n, x, e)
 }
@@ -13,14 +13,14 @@ S.piPS(n, x, e)
 \seealso{
 \code{\link{E.piPS}}
 }
-\details{The selected sample is drawn acording to the Sunter method (sequential-list procedure)}
+\details{The selected sample is drawn according to the Sunter method (sequential-list procedure)}
 \value{The function returns a matrix of \eqn{m} rows and two columns. Each element of the first column indicates the unit that
 was selected. Each element of the second column indicates the selection probability of this unit} 
-\author{Hugo Andrés Gutiérrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
-Särndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
-Gutiérrez, H. A. (2009), \emph{Estrategias de muestreo: Diseño de encuestas y estimación de parámetros}.
-Editorial Universidad Santo Tomás.
+Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
+Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
+Editorial Universidad Santo Tomas.
 }
 \examples{
 ############
@@ -41,9 +41,9 @@ U[sam]
 ############
 ## Example 2
 ############
-# Uses the Marco and Lucy data to draw a random sample of units accordind to a
+# Uses the Lucy data to draw a random sample of units accordind to a
 # piPS without replacement design
-data(Marco)
+
 data(Lucy)
 attach(Lucy)
 # The selection probability of each unit is proportional to the variable Income
