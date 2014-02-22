@@ -12,10 +12,8 @@ SupportRS(N, ID=FALSE)
 \seealso{
 \code{\link{IkRS}}
 }
-\details{A support is defined as the set of samples such that for any sample in the support, all the permutations
-of the coordinates of the sample are also in the support}
-\value{The function returns a matrix of \eqn{2^N} rows and \eqn{N} columns. Each row of this matrix 
-corresponds to a possible sample}
+\details{A support is defined as the set of samples such that for any sample in the support, all the permutations of the coordinates of the sample are also in the support}
+\value{The function returns a matrix of \eqn{2^N} rows and \eqn{N} columns. Each row of this matrix corresponds to a possible sample}
 \author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
 \references{
 Tille, Y. (2006), \emph{Sampling Algorithms}. Springer\cr

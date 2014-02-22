@@ -1,4 +1,4 @@
-4643a3cdd8ecb251a5f3e4c7561fba28 *DESCRIPTION
+cfe4f5554aad3d94e542d0f4def9fa9d *DESCRIPTION
 9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
 3361ec55b9ffadbf8a0617b1bbef747a *R/Deltakl.r
 6a4d0404d6b44b551d78d11b2b567110 *R/Domains.r
@@ -11,6 +11,7 @@ be910d22e4447f8913da71403bd534bd *R/E.Quantile.r
 4be1a247a936f175f6db856efbd94533 *R/E.SI.r
 806f8c370a4bcd0dd010430889368519 *R/E.STPPS.r
 3bf021fffb1fba1e4349ae768b13a616 *R/E.STSI.r
+21e98a8f8ea8db653d7e0b750fcf1500 *R/E.STpiPS.R
 0c71d133fb9e7285b729eb5da5b77c85 *R/E.SY.r
 e143f645d668f36267113689fb6733a5 *R/E.WR.r
 adcfe42ce6bbca950874f6aaa5827690 *R/E.piPS.r
@@ -32,6 +33,7 @@ a707d9c67048ea0385f5de6dcd702b85 *R/Pikl.r
 0f1050ce4f2d1dcd35a5845a4964aafe *R/S.SI.r
 d82a2d6499b2e0582574815798040a0f *R/S.STPPS.r
 8003a0926c740ce0e4da4509990e2872 *R/S.STSI.r
+9a58c8d5048437d1e9cfe7ebf1c21da3 *R/S.STpiPS.R
 7b3e8ac4f8ad064ed044976a3d91a901 *R/S.SY.r
 e9dbdb1f9cc8a327958d58bcb324ac3e *R/S.WR.r
 cbb7fc36cbd253dd2289be5c52c55ed9 *R/S.piPS.r
@@ -43,7 +45,10 @@ b5a9f54ee1db4b55a3638e042d1b5329 *R/T.SIC.r
 b053e4ebc48717ae025b3356dc413a3f *R/Wk.r
 9b1ece95e9263dc441baf943fe25f941 *R/nk.r
 079601f0f1d402c1d5892f264ff35460 *R/p.WR.r
+5e988f99c635f2e056560ad152bcc8a2 *data/BigLucy.txt.gz
 1239b649d110650b43521baf561d8ae0 *data/Lucy.txt.gz
+8ef57bddfb0a5b60400cdb2123cf4a21 *data/datalist
+0d9bd309f719b8089128211fb82b1c78 *man/BigLucy.rd
 912f63d1d375445697078959121e9e95 *man/Deltakl.rd
 b27e855b3ec09abecca5410bf779b1a0 *man/Domains.rd
 fa59021d4582399908e1ba31abf3447d *man/E.2SI.rd
@@ -55,6 +60,7 @@ d5a5ae997310697781bec23f8ccfe646 *man/E.PO.rd
 57d482058a76e39b9886f46ea656b753 *man/E.SI.rd
 45f5450b386b8cd12c08b75ba587105c *man/E.STPPS.rd
 399bb7c634d2c555bc550766b3ab40ed *man/E.STSI.rd
+cd5ea9e7aa2241b64acfe555707f6ea9 *man/E.STpiPS.Rd
 b506cad921f7891cbeaf509ced1fba7f *man/E.SY.rd
 13535cea85218f69049ce8ecab375aa6 *man/E.WR.rd
 8f7f9d5d28df67e65ad0fb88a656eb79 *man/E.piPS.rd
@@ -65,7 +71,7 @@ b120de37ede5759c7cdd4c4f01ab57a6 *man/HT.rd
 f7de43c9eb9fefca37698d9953643d4b *man/Ik.rd
 3e43ab05909862c55b815cf2813fa4ea *man/IkRS.rd
 69f454d5414be29949d1ba0bdbcc1eae *man/IkWR.rd
-27f324bd8e289269dd7d2a398fd510f1 *man/Lucy.rd
+c63d06a30d240f0f9eb9c13d0dd1447e *man/Lucy.rd
 d95d843ff4c2e67fd513f475e55cc20c *man/OrderWR.rd
 f9756463f6376ab8fb7f0fe3da472b84 *man/Pik.rd
 a50519cbdd41ef0761e1e58b7589fe8b *man/PikHol.rd
@@ -77,11 +83,12 @@ a50519cbdd41ef0761e1e58b7589fe8b *man/PikHol.rd
 f7a9e0c6bd5b528a16613a0e9d1322af *man/S.SI.rd
 0a40d827d85c522f60a5046c8bdf64bf *man/S.STPPS.rd
 1ad7f74dbd40100413824786ec82e9ce *man/S.STSI.rd
+d99530004589fa8d69b7f81f8dce580a *man/S.STpiPS.Rd
 27a7dba29ce4799c9de301435765667f *man/S.SY.rd
 a72ed27ac124fbc712b5e01ff738963f *man/S.WR.rd
 05a0ac10c31a2f2b2e011f3af3cd9890 *man/S.piPS.rd
 c47bbfb47f714729bc8a858d0abab316 *man/Support.rd
-be92b4bed554af5d95c042ea62b81d03 *man/SupportRS.rd
+c8b11ef873f2d180bd66cbe78f9fa6c2 *man/SupportRS.rd
 4033800432589f0a9ba18f7abf673744 *man/SupportWR.rd
 32a4aef7f279aa89c8752b872d5b15ff *man/T.SIC.rd
 5a2a270d1307da8e6178f3887c71730d *man/VarHT.rd
