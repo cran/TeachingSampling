@@ -3,12 +3,14 @@
 \title{Optimal Inclusion Probabilities Under Multi-purpose Sampling}
 \description{Computes the population vector of optimal inclusion probabilities under the Holmbergs's Approach}
 \usage{
-PikHol(n,sigma,e)
+PikHol(n, sigma, e, Pi)
 }
 \arguments{
 \item{n}{Vector of optimal sample sizes for each of the characteristics of interest.}
 \item{sigma}{A matrix containing the size measures for each characteristics of interest.}
 \item{e}{Maximum allowed error under the ANOREL approach.}
+\item{Pi}{Matrix of first order inclusion probabilities. By default, this probabilites are
+proportional to each sigma.}
 }
 \details{Assuming that all of the characteristic of interest are equally important, the Holmberg's sampling design
 yields the following inclusion probabilities
@@ -29,6 +31,11 @@ Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y es
 Editorial Universidad Santo Tomas
 }
 \examples{
+
+#######################
+#### First example ####
+#######################
+
 # Uses the Lucy data to draw an otpimal sample
 # in a multipurpose survey context
 data(Lucy)
@@ -58,6 +65,38 @@ names(data)
 Pik.s <- res[,2]
 # The variables of interest are: Income, Employees and Taxes
 # This information is stored in a data frame called estima
+estima <- data.frame(Income, Employees, Taxes)
+E.piPS(estima,Pik.s)
+
+########################
+#### Second example ####
+########################
+
+# We can define our own first inclusion probabilities
+data(Lucy)
+attach(Lucy)
+
+N <- dim(Lucy)[1]
+n <- c(350,400)
+
+sigy1 <- sqrt(Income^(1))
+sigy2 <- sqrt(Income^(2))
+sigma<-cbind(sigy1,sigy2)
+pikas <- cbind(rep(400/N, N), rep(400/N, N))
+
+Piks<-PikHol(n,sigma,0.03, pikas)
+
+n=round(sum(Piks))
+n
+
+res<-S.piPS(n,Piks)
+sam <- res[,1]
+
+data <- Lucy[sam,]
+attach(data)
+names(data)
+
+Pik.s <- res[,2]
 estima <- data.frame(Income, Employees, Taxes)
 E.piPS(estima,Pik.s)
 }

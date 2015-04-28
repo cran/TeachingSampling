@@ -1,4 +1,4 @@
-cfe4f5554aad3d94e542d0f4def9fa9d *DESCRIPTION
+2e5127d206d93df7ace930428f133962 *DESCRIPTION
 9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
 3361ec55b9ffadbf8a0617b1bbef747a *R/Deltakl.r
 6a4d0404d6b44b551d78d11b2b567110 *R/Domains.r
@@ -24,7 +24,7 @@ c60a1d443e73dabf60ebe1ab2b3c33b1 *R/Ik.r
 8bed49a1739d196e232612aeb1a12bd1 *R/IkWR.r
 04a608cc6616ec178bbfe7650db6b677 *R/OrderWR.r
 70be832b131550b968fa5113205b00dc *R/Pik.r
-7a2d425ad53a05d3f8b4a3e850ed6fbc *R/PikHol.r
+423064d9ff718c254ff1a44d8fe4b0cc *R/PikHol.r
 1fc5c1546f556b69087a6b750ce71c1c *R/PikPPS.r
 a707d9c67048ea0385f5de6dcd702b85 *R/Pikl.r
 7c84e86d40135bdbb857e9b0545a3615 *R/S.BE.r
@@ -74,7 +74,7 @@ f7de43c9eb9fefca37698d9953643d4b *man/Ik.rd
 c63d06a30d240f0f9eb9c13d0dd1447e *man/Lucy.rd
 d95d843ff4c2e67fd513f475e55cc20c *man/OrderWR.rd
 f9756463f6376ab8fb7f0fe3da472b84 *man/Pik.rd
-a50519cbdd41ef0761e1e58b7589fe8b *man/PikHol.rd
+a0666c64d790aab0cda20e2b3db296d4 *man/PikHol.rd
 43f565edb6c811123f14e67b38cd6ee0 *man/PikPPS.rd
 0a0b5c8cffa7613e811a32aee84577bd *man/Pikl.rd
 165c4e55496e15603c5fcb89c3dcaee0 *man/S.BE.rd
