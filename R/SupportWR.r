@@ -1,3 +1,5 @@
+#' @export
+
 SupportWR <- function(N, m, ID=FALSE){
 S=0
 a=rep(1,m)
@@ -29,6 +31,6 @@ nr <- choose(N+m-1,m)
 P1 <- matrix(P1, nrow=nr)
 sam <- matrix(ID[P1], nrow=nr)
 
-if (ID==FALSE) {return(P1)}
+if (is.logical(ID) == TRUE){return(P1)}
 else {return(sam)}
 }

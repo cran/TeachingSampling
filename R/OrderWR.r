@@ -1,3 +1,5 @@
+#' @export
+
 OrderWR<-function(N,m,ID=FALSE){
 b<-c(1:N)
 grilla<-function(a){
@@ -30,8 +32,7 @@ Sam1<-rbind(Sam1,c(sam[j,],b[k]))
 sam<-Sam1[-1,]
 }
 }
-
-if(ID==FALSE){return(sam)}
+if (is.logical(ID) == TRUE){return(sam)}
 else{
 a<-dim(sam)
 val<-matrix(NA,a[1],a[2])
