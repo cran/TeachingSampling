@@ -1,4 +1,4 @@
-\name{BigBigLucy}
+\name{BigLucy}
 \docType{data}
 \alias{BigLucy}
 \title{Full Business Population Database}
@@ -6,9 +6,9 @@
 This data set corresponds to some financial variables of 85396 industrial companies of a city in a particular fiscal year.
 }
 \seealso{
-\code{\link{Lucy}}
+\code{\link{Lucy}, \link{BigCity}}
 }
-\usage{BigLucy}
+\usage{data(BigLucy)}
 \format{
   \describe{
 \item{ID}{The identifier of the company. It correspond to an alphanumeric sequence (two letters and three digits)}
@@ -26,7 +26,7 @@ revenues and adjusting for the cost of doing business}
 \item{Segments}{Cartographic segments by county. A segment comprises in average 10 companies located close to each other.}
 }
 }
-\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hagutierrezro@gmail.com}}
 \references{
 Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
 Editorial Universidad Santo Tomas.

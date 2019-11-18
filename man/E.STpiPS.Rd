@@ -18,7 +18,7 @@ unit in the selected sample}
 \details{Returns the estimation of the population total of every single variable of interest, its estimated standard error, its estimated coefficient of variation and its corresponding DEFF in all of the strata and finally in the entire population}
 \value{The function returns an array composed by several  matrices representing each variable of interest. The columns of each matrix
 correspond to the estimated parameters of the variables of interest in each stratum and in the entire population}
-\author{Hugo Andres Gutierrez Rojas \email{hugogutierrez@usantotomas.edu.co}}
+\author{Hugo Andres Gutierrez Rojas \email{hagutierrezro@gmail.com}}
 \references{
 Sarndal, C-E. and Swensson, B. and Wretman, J. (1992), \emph{Model Assisted Survey Sampling}. Springer.\cr
 Gutierrez, H. A. (2009), \emph{Estrategias de muestreo: Diseno de encuestas y estimacion de parametros}.
@@ -40,7 +40,7 @@ N3<-summary(Level)[[3]]
 N1;N2;N3
 
 # Defines the sample size at each stratum
-n1<-70
+n1<-N1
 n2<-100
 n3<-200
 nh<-c(n1,n2,n3)
